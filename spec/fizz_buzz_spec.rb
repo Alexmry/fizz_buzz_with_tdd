@@ -17,6 +17,11 @@ RSpec.describe FizzBuzz do
         expect(outputs[2]).to eq('Fizz')
         expect(outputs[5]).to eq('Fizz')
     end
-    it "outputs Buzz for multiples of 5"
-    it "outputs FizzBuzz for multiples of 3 and 5"
+
+    it "outputs Buzz for multiples of 5" do
+        expect(outputs[4]).to eq('Buzz')
+        expect(outputs[9]).to eq('Buzz')
+    end
+
+    # it "outputs FizzBuzz for multiples of 3 and 5"
 end
