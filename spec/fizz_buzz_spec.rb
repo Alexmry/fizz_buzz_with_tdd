@@ -2,10 +2,15 @@ require "fizz_buzz"
 
 RSpec.describe FizzBuzz do
     subject(:outputs) { described_class.outputs }
-    it "outputs the number from 1 to 100" do
-        expect(outputs).to eq(('1'..'100')to_a)
-        expect(outputs.first).to eq(1)
-        expect(outputs.last).to eq(100)
+
+    it "start at 1" do
+        expect(outputs.first).to eq('1')
+        # expect(outputs.first).to eq(1)
+        # expect(outputs.last).to eq(100)
+    end
+
+    it "has 100 outputs" do
+        expect(ouputs.size).to eq(100)
     end
 
     it "outputs Fizz for multiples of 3"
